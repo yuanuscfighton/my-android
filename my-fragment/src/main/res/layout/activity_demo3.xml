@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+
+  <!-- title -->
+  <fragment
+    android:id="@+id/title_fragment"
+    android:name="com.example.my_fragment.common.TitleFragment"
+    android:layout_width="match_parent"
+    android:layout_height="50dp" />
+
+  <Button
+    android:id="@+id/demo3_add_fragment1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="ADD fragment1" />
+
+  <Button
+    android:id="@+id/demo3_add_fragment2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="ADD fragment2" />
+
+  <Button
+    android:id="@+id/demo3_remove_fragment2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="REMOVE fragment2" />
+
+  <Button
+    android:id="@+id/demo3_replace_fragment1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="REPLACE fragment1" />
+
+  <FrameLayout
+    android:id="@+id/demo3_fragment_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+
+</LinearLayout>
+

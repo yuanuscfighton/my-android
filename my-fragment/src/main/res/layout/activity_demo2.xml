@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+
+  <fragment
+    android:id="@+id/title_fragment"
+    android:name="com.example.my_fragment.common.TitleFragment"
+    android:layout_width="match_parent"
+    android:layout_height="45dp" />
+
+  <include
+    android:id="@+id/demo2_bottom_bar"
+    layout="@layout/demo2_bottom_bar"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:layout_alignParentBottom="true" />
+
+  <FrameLayout
+    android:id="@+id/demo2_fragment_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@+id/demo2_bottom_bar"
+    android:layout_below="@+id/title_fragment" />
+
+</RelativeLayout>

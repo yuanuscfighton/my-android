@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+
+  <!-- title -->
+  <fragment
+    android:id="@+id/title_fragment"
+    android:name="com.example.my_fragment.common.TitleFragment"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <Button
+    android:id="@+id/demo5_add_fragment1"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="5dp"
+    android:text="ADD fragment1"
+    app:layout_constraintEnd_toStartOf="@+id/demo5_add_fragment2"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/title_fragment" />
+
+  <Button
+    android:id="@+id/demo5_add_fragment2"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="5dp"
+    android:text="ADD fragment2"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toEndOf="@+id/demo5_add_fragment1"
+    app:layout_constraintTop_toBottomOf="@+id/title_fragment" />
+
+  <Button
+    android:id="@+id/demo5_add_fragment3"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="5dp"
+    android:text="ADD fragment3"
+    app:layout_constraintEnd_toStartOf="@+id/demo5_add_fragment4"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/demo5_add_fragment1" />
+
+  <Button
+    android:id="@+id/demo5_add_fragment4"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="5dp"
+    android:text="ADD fragment4"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toEndOf="@+id/demo5_add_fragment3"
+    app:layout_constraintTop_toBottomOf="@+id/demo5_add_fragment1" />
+
+  <Button
+    android:id="@+id/demo5_show_fragment_op"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="5dp"
+    android:text="show"
+    app:layout_constraintTop_toBottomOf="@+id/demo5_add_fragment4" />
+
+  <Button
+    android:id="@+id/demo5_hide_fragment_op"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="5dp"
+    android:text="hide"
+    app:layout_constraintTop_toBottomOf="@+id/demo5_show_fragment_op" />
+
+  <FrameLayout
+    android:id="@+id/demo5_fragment_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="5dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/demo5_hide_fragment_op" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

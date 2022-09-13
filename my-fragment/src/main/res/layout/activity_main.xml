@@ -15,61 +15,33 @@
     <!-- demo1:静态添加fragment -->
     <Button
       android:id="@+id/demo1_entry"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:minHeight="60dp"
-      android:text="demo1:静态添加fragment"
-      android:textAllCaps="false"
-      android:textSize="20sp" />
+      style="@style/normalBtn"
+      android:text="demo1:静态添加fragment" />
 
     <!-- demo2:动态添加fragment -->
     <Button
       android:id="@+id/demo2_entry"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:minHeight="60dp"
-      android:text="demo2:动态添加fragment"
-      android:textAllCaps="false"
-      android:textSize="20sp" />
+      style="@style/normalBtn"
+      android:text="demo2:动态添加fragment" />
 
     <!-- demo3:FragmentTransaction的使用 -->
     <Button
       android:id="@+id/demo3_entry"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:minHeight="60dp"
-      android:text="demo3:FragmentTransaction的使用"
-      android:textAllCaps="false"
-      android:textSize="20sp" />
+      style="@style/normalBtn"
+      android:text="demo3:FragmentTransaction的使用" />
 
     <!-- demo4:回退栈 -->
     <Button
       android:id="@+id/demo4_entry"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:minHeight="60dp"
-      android:text="demo4:回退栈"
-      android:textAllCaps="false"
-      android:textSize="20sp" />
+      style="@style/normalBtn"
+      android:text="demo4:回退栈" />
 
     <!-- demo5:show、hide -->
     <Button
       android:id="@+id/demo5_entry"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:minHeight="60dp"
-      android:text="demo5:show+hide"
-      android:textAllCaps="false"
-      android:textSize="20sp" />
+      style="@style/normalBtn"
+      android:text="demo5:show+hide" />
 
-    <Button
-      android:id="@+id/demo_test_entry"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:minHeight="60dp"
-      android:text="测试activity"
-      android:textAllCaps="false"
-      android:textSize="20sp" />
 
   </LinearLayout>
 

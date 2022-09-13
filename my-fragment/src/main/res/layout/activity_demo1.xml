@@ -5,13 +5,13 @@
 
   <fragment
     android:id="@+id/title_fragment"
-    android:name="com.example.my_fragment.common.TitleFragment"
+    android:name="com.laioffer.my_fragment.common.TitleFragment"
     android:layout_width="match_parent"
     android:layout_height="50dp" />
 
   <fragment
     android:id="@+id/simple_content_fragment"
-    android:name="com.example.my_fragment.common.SimpleContentFragment"
+    android:name="com.laioffer.my_fragment.common.SimpleContentFragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_below="@+id/title_fragment" />

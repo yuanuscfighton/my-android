@@ -1,11 +1,11 @@
 package com.laioffer.my_fragment;
 
+import android.content.Intent;
+import android.os.Bundle;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.Intent;
-import android.os.Bundle;
 
 import com.laioffer.my_fragment.demo1_静态fragment.Demo1Activity;
 import com.laioffer.my_fragment.demo2_动态fragment.Demo2Activity;
@@ -13,6 +13,11 @@ import com.laioffer.my_fragment.demo3_FragmentTransaction的使用.Demo3Activity
 import com.laioffer.my_fragment.demo4_回退栈.Demo4Activity;
 import com.laioffer.my_fragment.demo5_回退栈.Demo5Activity;
 
+/**
+ * fragment优点:
+ * 1.能够将activity分离成多个可重用的组件，每个组件都有自己的生命周期和UI
+ * 2.是一个独立的模块，和Activity绑定在一起，可以在运行中动态地移除、加入、交换等
+ */
 public class MainActivity extends AppCompatActivity {
 
   @Override

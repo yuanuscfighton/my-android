@@ -1,14 +1,13 @@
 plugins {
     id 'com.android.application'
-    id 'org.jetbrains.kotlin.android'
 }
 
 android {
     compileSdk 32
 
     defaultConfig {
-        applicationId "com.laioffer.myapplication"
-        minSdk 21
+        applicationId "com.laioffer.my_mvx"
+        minSdk 26
         targetSdk 32
         versionCode 1
         versionName "1.0"
@@ -22,15 +21,19 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
+    dataBinding {
+        enabled true
+    }
 }
 
 dependencies {
-    // kotlin依赖
-    implementation 'androidx.core:core-ktx:1.8.0'
+
     implementation 'androidx.appcompat:appcompat:1.5.1'
     implementation 'com.google.android.material:material:1.6.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'

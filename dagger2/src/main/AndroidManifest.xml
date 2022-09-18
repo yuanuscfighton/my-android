@@ -3,10 +3,11 @@
   package="com.laioffer.dagger2">
 
   <application
+    android:name="com.laioffer.demo.demo3_全局单例.app.MyApplication"
     android:allowBackup="true"
-    android:icon="@mipmap/ic_launcher"
+    android:icon="@drawable/dagger_icon"
     android:label="@string/app_name"
-    android:roundIcon="@mipmap/ic_launcher_round"
+    android:roundIcon="@drawable/dagger_icon"
     android:supportsRtl="true"
     android:theme="@style/Theme.MyApplication">
     <activity

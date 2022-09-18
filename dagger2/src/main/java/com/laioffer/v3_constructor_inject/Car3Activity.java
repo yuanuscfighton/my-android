@@ -4,7 +4,6 @@ import android.os.Bundle;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.laioffer.DaggerCarComponent;
 import com.laioffer.dagger2.R;
 
 public class Car3Activity extends AppCompatActivity {

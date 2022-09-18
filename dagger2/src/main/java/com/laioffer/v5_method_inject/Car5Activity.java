@@ -1,12 +1,13 @@
 package com.laioffer.v5_method_inject;
 
-import javax.inject.Inject;
-
 import android.os.Bundle;
+
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.hiandroid.R;
+import com.laioffer.dagger2.R;
+
+import javax.inject.Inject;
 
 public class Car5Activity extends AppCompatActivity {
 
@@ -16,7 +17,7 @@ public class Car5Activity extends AppCompatActivity {
   @Override
   protected void onCreate(@Nullable Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    setContentView(R.layout.car3_activity_layout);
+    setContentView(R.layout.empty_layout);
 
     CarComponent component = DaggerCarComponent.create();
     component.inject(Car5Activity.this);

@@ -3,7 +3,7 @@
   package="com.laioffer.dagger2">
 
   <application
-    android:name="com.laioffer.demo.demo3_全局单例.app.MyApplication"
+    android:name="com.laioffer.enjoy.demo4_全局单例.app.MyApplication"
     android:allowBackup="true"
     android:icon="@drawable/dagger_icon"
     android:label="@string/app_name"
@@ -11,7 +11,7 @@
     android:supportsRtl="true"
     android:theme="@style/Theme.MyApplication">
     <activity
-      android:name="com.laioffer.v1.Car1Activity"
+      android:name="com.laioffer.enjoy.demo3_局部单例.ui.FirstActivity"
       android:exported="true">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
@@ -19,6 +19,7 @@
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
+    <activity android:name="com.laioffer.enjoy.demo3_局部单例.ui.SecondActivity" />
   </application>
 
 </manifest>

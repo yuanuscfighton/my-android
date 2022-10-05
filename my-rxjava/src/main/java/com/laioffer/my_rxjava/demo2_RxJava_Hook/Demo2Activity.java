@@ -24,6 +24,7 @@ public class Demo2Activity extends AppCompatActivity {
   protected void onCreate(@Nullable Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
 
+    // RxJavaPlugins.onAssembly(new Observable<>(source)) -- 绝大部分的操作符都有RxJavPlugins这个hook
     //noinspection rawtypes
     RxJavaPlugins.setOnObservableAssembly(new Function<Observable, Observable>() {
       @SuppressWarnings("rawtypes")

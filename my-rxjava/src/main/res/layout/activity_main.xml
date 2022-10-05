@@ -20,5 +20,15 @@
       style="@style/normalBtn"
       android:text="demo2:RxJava-Hook" />
 
+    <Button
+      android:id="@+id/start_demo3_activity"
+      style="@style/normalBtn"
+      android:text="demo3:RxJava的观察者模式" />
+
+    <Button
+      android:id="@+id/start_demo4_activity"
+      style="@style/normalBtn"
+      android:text="demo4:map变换" />
+
   </LinearLayout>
 </ScrollView>

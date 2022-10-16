@@ -6,12 +6,8 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.laioffer.my_rxjava.demo1_观察者模式.Client;
-import com.laioffer.my_rxjava.demo1_观察者模式.Demo1Activity;
-import com.laioffer.my_rxjava.demo1_观察者模式.Observable;
-import com.laioffer.my_rxjava.demo1_观察者模式.Observer;
-import com.laioffer.my_rxjava.demo1_观察者模式.WeChatServerObservableImpl;
-import com.laioffer.my_rxjava.demo2_RxJava_Hook.Demo2Activity;
+import com.laioffer.my_rxjava.L3_source.demo1_观察者模式.Demo1Activity;
+import com.laioffer.my_rxjava.L3_source.demo2_RxJava_Hook.Demo2Activity;
 
 public class MainActivity extends AppCompatActivity {
 

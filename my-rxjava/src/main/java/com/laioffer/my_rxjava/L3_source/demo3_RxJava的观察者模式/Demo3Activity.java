@@ -1,4 +1,4 @@
-package com.laioffer.my_rxjava.demo3_RxJava的观察者模式;
+package com.laioffer.my_rxjava.L3_source.demo3_RxJava的观察者模式;
 
 import android.os.Bundle;
 
@@ -26,25 +26,28 @@ public class Demo3Activity extends AppCompatActivity {
     super.onCreate(savedInstanceState);
 
     // step2 Observable创建过程
-    // 进入create()方法: new Observable<>(source): (i) 创建了ObservableCreate对象 (ii) 把我们自己定义的source传进去
+    // 进入create()方法: {@code new ObservableCreate<>(source)} (i) 创建了ObservableCreate对象; (ii) 把我们自己定义的source传进去
     Observable.create(
             // new ObservableOnSubscribe<String>(): 自定义source
             new ObservableOnSubscribe<String>() {
               // 这个重写的方法，在ObservableCreate#subscribeActual()中被调用source.subscribe(parent);
+              // source就是我们自定义的source，parent是发射器
               @Override
               public void subscribe(@NonNull ObservableEmitter<String> emitter) {
+                // emitter(发射器).onNext()，面向发射器编程，发射器具体怎么做不管。发射器里面会用自定义观察者(observer.onNext())
                 emitter.onNext("这是Observable的创建过程");
               }
             })
 
         // step3 subscribe订阅过程
         // 这里是上面创建的ObservableCreate对象调用的subscribe，因为Observable#create()会返回ObservableCreate对象
-        .subscribe( // 在subscribe()里，调用抽象subscribeActual()方法，具体实现是在ObservableCreate类中
+        .subscribe( // 在subscribe()方法里，会调用subscribeActual()方法，而subscribeActual()是抽象方法，具体实现是在ObservableCreate类中
 
             // step1 Observer的源码分析
             // 自定义观察者
             new Observer<String>() {
 
+              // onSubscribe()方法执行时机: 一订阅的时候
               @Override
               public void onSubscribe(@NonNull Disposable d) {
                 /**

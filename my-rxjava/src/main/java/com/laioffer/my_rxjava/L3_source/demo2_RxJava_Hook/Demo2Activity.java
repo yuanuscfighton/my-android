@@ -1,4 +1,4 @@
-package com.laioffer.my_rxjava.demo2_RxJava_Hook;
+package com.laioffer.my_rxjava.L3_source.demo2_RxJava_Hook;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -15,8 +15,8 @@ import io.reactivex.rxjava3.functions.Function;
 import io.reactivex.rxjava3.plugins.RxJavaPlugins;
 
 /**
- * @description: RxJava Hook点。即，对整个RxJava做监听
- * @date: 2022/9/17 1:17 下午
+ * @description RxJava Hook点。即，对整个RxJava做监听
+ * @date 2022/9/17 1:17 下午
  */
 public class Demo2Activity extends AppCompatActivity {
 

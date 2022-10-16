@@ -17,10 +17,10 @@
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
-    <activity android:name=".demo1_观察者模式.Demo1Activity" />
-    <activity android:name=".demo2_RxJava_Hook.Demo2Activity" />
-    <activity android:name=".demo3_RxJava的观察者模式.Demo3Activity" />
-    <activity android:name=".demo4_map变换.Demo4Activity" />
+    <activity android:name=".L3_source.demo1_观察者模式.Demo1Activity" />
+    <activity android:name=".L3_source.demo2_RxJava_Hook.Demo2Activity" />
+    <activity android:name=".L3_source.demo3_RxJava的观察者模式.Demo3Activity" />
+    <activity android:name=".L3_source.demo4_map变换.Demo4Activity" />
   </application>
 
 </manifest>

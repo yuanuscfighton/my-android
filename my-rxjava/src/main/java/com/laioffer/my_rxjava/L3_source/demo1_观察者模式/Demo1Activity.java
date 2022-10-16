@@ -1,4 +1,4 @@
-package com.laioffer.my_rxjava.demo1_观察者模式;
+package com.laioffer.my_rxjava.L3_source.demo1_观察者模式;
 
 import android.os.Bundle;
 

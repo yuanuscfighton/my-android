@@ -8,8 +8,8 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
     // 这是Google对注解处理器所提供的服务，目的是为了生成注解配置，并 可以生成java文件代码等
-    compileOnly 'com.google.auto.service:auto-service:1.0-rc4'
-    annotationProcessor 'com.google.auto.service:auto-service:1.0-rc4'
+    compileOnly 'com.google.auto.service:auto-service:1.0.1'
+    annotationProcessor 'com.google.auto.service:auto-service:1.0.1'
 
     // 此JavaPoet可以去生成Java文件  以面向对象的思维，生成代码
     implementation 'com.squareup:javapoet:1.13.0'
